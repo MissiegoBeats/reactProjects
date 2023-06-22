@@ -1,19 +1,24 @@
 import './App.css';
 import Button from './components/Button';
+import Counter from './components/Counter';
+import { useState } from 'react';
 
 function App() {
   
+  const [numClicks, setNumClicks] = useState(0);
+
   const addClick = () => {
-    console.log('handleClick()');
+    setNumClicks(numClicks + 1)
   };
 
   const resetCounter = () =>{
-    console.log('resetCounter()');
+    setNumClicks(0)
   };
 
   return (
     <div className="App">
       <div className="counter-container">
+        <Counter numClicks = { numClicks } />
         <Button
           text = 'Click Me'
           isClickButton = {true}

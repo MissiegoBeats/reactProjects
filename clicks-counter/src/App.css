@@ -16,3 +16,17 @@ html, body{
   padding-top: 15px;
   font-family: Lato, sans-serif;
 }
+
+.counter-container{
+  height: 500px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: vertical;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid white;
+  border-radius: 15px;
+  padding: 15px;
+
+}
