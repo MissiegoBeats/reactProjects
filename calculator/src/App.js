@@ -3,7 +3,7 @@ import Button from './components/Button.js';
 import Screen from './components/Screen.js';
 import ClearButton from './components/ClearButton';
 import { useState } from 'react';
-import { evaluate } from 'mathjs'; //npm install mathjs
+import { evaluate } from 'mathjs';
 
 function App() {
 
