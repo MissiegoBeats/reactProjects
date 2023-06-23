@@ -8,7 +8,9 @@ function Button(props) {
   };
 
   return (
-    <div className={`button-container${esOperador(props.children) ? '-operator' : ''}`.trim()}>
+    <div
+      className={`button-container${esOperador(props.children) ? '-operator' : ''}`.trim()}
+      onClick={()=>props.handleClick(props.children)}>
       {props.children}
     </div>
   ); 
