@@ -18,7 +18,11 @@ function App() {
   };
 
   const processOperation = () => {
-    setInput(evaluate(input));
+    if (input) {
+      setInput(evaluate(input));
+    } else {
+      alert("You must introduce some mathematical expression");
+    }
   };
 
   return (
