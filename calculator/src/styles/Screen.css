@@ -12,4 +12,10 @@
   margin: 4px;
   user-select: none;
   box-shadow: -1px 1px 4px 1px white;
+  transition: all 0.2s ease-in-out;
+}
+
+.screen-container:empty{
+  transition: all 0.2s ease-in-out;
+  background: #7979ff;
 }
