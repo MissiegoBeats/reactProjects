@@ -58,5 +58,41 @@
 }
 
 .task-container:nth-child(3n+3){
-  background-color: #3b3b3b;
+  background-color: #3b3b4f;
+}
+
+.task-container.completed:nth-child(3n+1){
+  background-color: #20321b;
+}
+
+.task-container.completed:nth-child(3n+2){
+  background-color: #578555;
+}
+
+.task-container.completed:nth-child(3n+3){
+  background-color: #4b664c;
+}
+
+.task-container:nth-child:hover(3n+1){
+  background-color: #407e83;
+}
+
+.task-container:nth-child:hover(3n+2){
+  background-color: #4a6e6e;
+}
+
+.task-container:nth-child:hover(3n+3){
+  background-color: #3b4f4e;
+}
+
+.task-container.completed:nth-child:hover(3n+1){
+  background-color: #4c7e3e;
+}
+
+.task-container.completed:nth-child:hover(3n+2){
+  background-color: #60a85c;
+}
+
+.task-container.completed:nth-child:hover(3n+3){
+  background-color: #7ca37e;
 }
