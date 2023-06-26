@@ -8,21 +8,37 @@ function TaskList() {
   const [arrayTasks, setArrayTasks] = useState([])
 
   const addTask = (task) => {
-    setArrayTasks(arrayTasks.append(task));
+    if (task.text.trim()) {
+      task.text = task.text.trim();
+      const updatedArrayTasks = [task, ...arrayTasks];
+      setArrayTasks(updatedArrayTasks);
+    }
   };
 
-  const removeTask = (task) => {
-    setArrayTasks(arrayTasks.remove(task));
+  const completeTask = (id) => {
+    /*setArrayTasks(arrayTasks.map((task) => {
+      if (task.id === id) {
+        return { ...task, completed: !task.completed };
+      }
+    }));*/
   };
+
+  const removeTask = (id) => {
+    //setArrayTasks(arrayTasks.filter((task) => task.id !== id));
+  };
+
   return (
     <>
-      <Form />
+      <Form onSubmit={addTask} />
       <div className='task-list-container'>
         {
           arrayTasks.map((task) => 
             <Task
+              id={task.id}
               text={task.text}
-              completed={task.completed} />
+              completed={task.completed}
+              completeTask={completeTask}
+              removeTask={removeTask}/>
           )
         }
       </div>
