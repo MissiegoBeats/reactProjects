@@ -12,19 +12,16 @@ function TaskList() {
       task.text = task.text.trim();
       const updatedArrayTasks = [task, ...arrayTasks];
       setArrayTasks(updatedArrayTasks);
+      alert("Task added successfully!");
     }
   };
 
   const completeTask = (id) => {
-    /*setArrayTasks(arrayTasks.map((task) => {
-      if (task.id === id) {
-        return { ...task, completed: !task.completed };
-      }
-    }));*/
+    
   };
 
   const removeTask = (id) => {
-    //setArrayTasks(arrayTasks.filter((task) => task.id !== id));
+    
   };
 
   return (
@@ -34,6 +31,7 @@ function TaskList() {
         {
           arrayTasks.map((task) => 
             <Task
+              key={task.id}
               id={task.id}
               text={task.text}
               completed={task.completed}

@@ -18,8 +18,6 @@ function Form(props) {
       completed: false
     };
     props.onSubmit(newTask);
-    alert("Task added successfully!");
-
   };
 
   return (
