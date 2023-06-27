@@ -1,0 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  background-color: #1b1b32;
+}
+
+.App{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  font-family: Lato, sans-serif;
+}
+
+.counter-container{
+  height: 500px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: vertical;
+  align-items: center;
+  justify-content: center;
+  border: 8px inset white;
+  border-radius: 15px;
+  padding: 15px;
+}
