@@ -17,6 +17,9 @@ function App() {
     <div className="App">
       <h1>My name is: {name}</h1>
       <button onClick={changeName}>Alternate name</button>
+      <div>
+        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+      </div>
     </div>
   );
 }
