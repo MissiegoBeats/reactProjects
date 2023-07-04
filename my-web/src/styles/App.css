@@ -21,16 +21,15 @@ body, html{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.7s;
+  transition: 1.7s;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
 .calculator:hover{
-  background-color: #1b1b23;
-  border: 1px solid white;
+  background-color: #388f96;
   display: flex;
-  transition: 0.7s;
+  transition: 1.7s;
   border-radius: 200px;
 }
 
