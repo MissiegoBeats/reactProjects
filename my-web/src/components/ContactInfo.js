@@ -5,6 +5,7 @@ import { BsInfoCircle } from 'react-icons/bs';
 import { BiLogoGmail } from 'react-icons/bi';
 import imageContact from '../images/contact.png';
 import backgroundContact from '../images/backgroundContactImage.png';
+import {FaRegCopy} from 'react-icons/fa';
 
 function ContactInfo() {
   
@@ -15,6 +16,13 @@ function ContactInfo() {
     window.open('mailto:pmitestsuah@gmail.com?subject=Email To My-Web Support&body=' + mailBody,'');
   };
 
+  const copyToClipboard = (e) => {
+    var copyText = "555-555-5555";
+    navigator.clipboard.writeText(copyText).then(function(x) {
+      alert("Phone copied to clipboard!");
+    });
+  };
+
   return (
     <div className="contact-container" style={
       {
@@ -23,7 +31,7 @@ function ContactInfo() {
       }}>
       <h2><BsInfoCircle /> </h2>
       <h2>&nbsp;Contact Info</h2>
-      <p>Phone: 555-555-5555  &nbsp;<FaPhoneAlt /></p>
+      <p>Phone: 555-555-5555  &nbsp;<FaPhoneAlt /> &nbsp; Copy phone to clipboard: <FaRegCopy className="copy" onClick={copyToClipboard}/></p>
       <p>Send us an email: </p>
       <h2 style={{
         borderBottom: '1px solid white',
