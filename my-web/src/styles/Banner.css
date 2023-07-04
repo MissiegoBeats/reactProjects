@@ -1,6 +1,6 @@
 .banner{
   width: 100%;
-  background-color: #00c9b8;
+  background-color: rgb(153, 2, 143);
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -20,23 +20,23 @@ h1,p {
 }
 
 .banner:hover{
-  background-color: rgba(0, 255, 234, 0.459);
+  background-color: rgba(48,238,226,1);
   color: black;
   transition: 0.7s;
 }
 
 .contact{
   width: 100%;
-  top: 10px;
+  margin-top: 0px;
   position: fixed;
   background-color:transparent;
   display: flex;
   justify-content: right; 
-  margin-right: 25px;
+  margin-right: 35px;
 }
 
 .contact-button{
-  background-color: #00c9b8;
+  background-color: rgba(48,238,226,1);
   padding: 5px;
   color: #1b1b23;
   border-radius: 10px;
@@ -48,7 +48,7 @@ h1,p {
 }
 
 .contact-button:hover{
-  background-color: rgba(0, 255, 255, 0.781);
+  background-color: rgb(153, 2, 143);
   transition: 0.7s;
   border-radius: 5px;
   box-shadow: 0 0 10px #000000;
