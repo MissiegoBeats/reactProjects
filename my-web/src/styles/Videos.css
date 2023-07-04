@@ -15,7 +15,7 @@ iframe{
   margin: 14px;
   width: 350px;
   height: 210px;
-  border: 2px solid white;
+  border: 2px outset white;
   border-radius: 20px;
   transition: 1s;
 }
