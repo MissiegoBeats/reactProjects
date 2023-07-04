@@ -46,3 +46,15 @@ a{
   opacity: 1;
   transition: 1.7s;
 }
+
+.copy{
+  height: 20px;
+  width: 20px;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.copy:hover{
+  cursor: pointer;
+}
