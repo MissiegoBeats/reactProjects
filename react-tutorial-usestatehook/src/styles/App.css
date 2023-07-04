@@ -1,0 +1,52 @@
+.App{
+  text-align: center;
+  background-color: #1b1b23;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  color: oranged;
+  margin: 6px;
+  height: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px dotted darkred;
+  outline: none;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+button{
+  color: white;
+  background-color: rgb(5, 139, 0);
+  border-radius: 8px;
+  border: 1px dotted rgb(6, 70, 0);
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px;
+  transition: 0.7s;
+}
+
+button:hover{
+  background-color: rgb(138, 255, 134);
+  border: 1px dotted rgb(168, 255, 160);
+  outline: none;
+  font-size: 1rem;
+  padding: 11px;
+  margin: 11px;
+  cursor: pointer;
+  color: black; 
+  transition: 0.7s;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
