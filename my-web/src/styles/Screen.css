@@ -1,0 +1,21 @@
+.screen-container{
+  flex: 1 1;
+  background: #1b1b23;
+  height: 100px;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  font-size: 50px;
+  margin: 4px;
+  user-select: none;
+  box-shadow: -1px 1px 4px 1px white;
+  transition: all 0.2s ease-in-out;
+}
+
+.screen-container:empty{
+  transition: all 0.2s ease-in-out;
+  background: #7979ff;
+}

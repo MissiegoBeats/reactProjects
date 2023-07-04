@@ -1,6 +1,6 @@
 .banner{
   width: 100%;
-  background-color: #0a9e92;
+  background-color: #00c9b8;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -12,6 +12,7 @@
   top:0;
   z-index: 1;
   transition: 0.7s;
+  color: #1b1b23;
 }
 
 h1,p {
@@ -19,6 +20,7 @@ h1,p {
 }
 
 .banner:hover{
-  background-color: red;
+  background-color: rgba(0, 255, 255, 0.411);
+  color: white;
   transition: 0.7s;
 }

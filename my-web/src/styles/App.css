@@ -13,3 +13,42 @@ body, html{
   color: #fff;
   background-color: #1b1b23;
 }
+
+.calculator{
+  margin-top:100px;
+  height: auto;
+  width:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.calculator:hover{
+  background-color: #1b1b23;
+  border: 1px solid white;
+  display: flex;
+  transition: 0.7s;
+  border-radius: 200px;
+}
+
+.calculator-info{
+  background-color: transparent;
+  transition: 1.7s;
+  margin-top: -250px;
+  margin-right: -420px;
+  text-align: right;
+  font-size: 20px;
+  font-family: fantasy, sans-serif;
+}
+
+.calculator:hover + .calculator-info{
+  color: white;
+  top: 0;
+  width: auto;
+  background-color: transparent;
+  margin-right: 70px;
+  transition: 1.7s;
+}
