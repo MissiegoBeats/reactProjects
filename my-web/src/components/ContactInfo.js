@@ -8,9 +8,12 @@ import backgroundContact from '../images/backgroundContactImage.png';
 
 function ContactInfo() {
   
-  function sendMail() {
-    alert("mail sent")
-  }
+  var mailBody = "Default mail body";
+
+  const sendEmail = (e) => {
+    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+    window.open('mailto:pmitestsuah@gmail.com?subject=Email To My-Web Support&body=' + mailBody,'');
+  };
 
   return (
     <div className="contact-container" style={
@@ -26,7 +29,7 @@ function ContactInfo() {
         borderBottom: '1px solid white',
         width: '532px',
         textAlign: 'center',
-      }}><a className="sendMail" onClick={sendMail}><BiLogoGmail /> </a></h2> 
+      }}><a className="sendMail" onClick={sendEmail}><BiLogoGmail /> </a></h2> 
       <img className="contact-image" src={imageContact}></img>
     </div>
   );
