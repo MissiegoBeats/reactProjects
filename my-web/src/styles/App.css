@@ -45,10 +45,10 @@ body{
 }
 
 .calculator:hover{
-  background-color: rgba(48,238,226,1);
+  background-color: rgba(48,238,226,0.3);
   display: flex;
   transition: 1.7s;
-  border-radius: 200px;
+  border-radius: 120px;
 }
 
 .calculator-info{
