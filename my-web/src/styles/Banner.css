@@ -1,0 +1,24 @@
+.banner{
+  width: 100%;
+  background-color: #0a9e92;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position:fixed;
+  top:0;
+  z-index: 1;
+  transition: 0.7s;
+}
+
+h1,p {
+  user-select: none;
+}
+
+.banner:hover{
+  background-color: red;
+  transition: 0.7s;
+}
