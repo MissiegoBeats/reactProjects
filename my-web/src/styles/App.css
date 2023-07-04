@@ -12,6 +12,7 @@ body, html{
   line-height: 1.5;
   color: #fff;
   background-color: #1b1b23;
+  overflow-x: hidden;
 }
 
 .calculator{
@@ -27,7 +28,7 @@ body, html{
 }
 
 .calculator:hover{
-  background-color: #388f96;
+  background-color: #389096b7;
   display: flex;
   transition: 1.7s;
   border-radius: 200px;
@@ -36,18 +37,23 @@ body, html{
 .calculator-info{
   background-color: transparent;
   transition: 1.7s;
-  margin-top: -250px;
-  margin-right: -420px;
+  margin-top: -260px;
   text-align: right;
-  font-size: 20px;
+  font-size: 25px;
   font-family: fantasy, sans-serif;
+  transform: translateX(400px);
 }
 
 .calculator:hover + .calculator-info{
+  transform: translateX(-15px);
   color: white;
   top: 0;
   width: auto;
   background-color: transparent;
-  margin-right: 70px;
   transition: 1.7s;
+}
+
+.contact-info{
+  margin-top: 500px;
+  width: 100%;
 }
