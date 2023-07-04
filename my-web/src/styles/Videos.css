@@ -1,0 +1,26 @@
+.videos{
+  margin-top: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: rgb(129, 0, 0);
+  padding: 20px;
+  margin-left: 4px;
+}
+
+iframe{
+  margin: 14px;
+  width: 350px;
+  height: 210px;
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+iframe:hover{
+  transform: scale(1.05);
+  transition: 1s;
+}
