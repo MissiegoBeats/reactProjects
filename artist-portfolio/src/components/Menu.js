@@ -22,7 +22,7 @@ function Menu() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
+    </Navbar>
   );
 }
 
