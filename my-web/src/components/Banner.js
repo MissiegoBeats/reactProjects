@@ -11,13 +11,13 @@ function Banner() {
   }
 
   return (
-    <div className="banner" >
+    <div className="banner" class="fixed-top">
       <Navbar bg="dark" expand="lg" data-bs-theme="dark">
-        <Navbar.Brand href="#home" style={{ marginLeft: "10px" }}>React Bootstrap Navbar</Navbar.Brand>
+        <Navbar.Brand href="#home-div" style={{ marginLeft: "10px" }}>React Bootstrap Navbar</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto"> {/* me-auto = margin-left: auto */}
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#home-div">Home</Nav.Link>
             <Nav.Link href="#contact-div">Contact</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown"> {/* id is required */}
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item> {/* href is required */}

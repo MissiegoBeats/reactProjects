@@ -6,7 +6,8 @@ import Videos from './components/Videos';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" class=" bg-dark">
+      <div id="home-div" style={{ top: "-100px", backgroundColor:"transparent", height:"10px", width:"10px"}}></div>
       <Banner />
       <div className="calculator">
         <Calculator />

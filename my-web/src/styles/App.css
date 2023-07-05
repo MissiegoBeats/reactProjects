@@ -25,15 +25,12 @@ body, html{
   line-height: 1.5;
   color: #fff;
   overflow-x: hidden;
-  
-}
-body{
   background-color: #1b1b23;
-  background-image: linear-gradient(to right, rgba(101,0,94,0.01),rgba(60,132,206,0.01),rgba(255,25,25,0.01));
+  
 }
 
 .calculator{
-  margin-top:100px;
+  margin-top:56.2px;
   height: auto;
   width:auto;
   display: flex;
