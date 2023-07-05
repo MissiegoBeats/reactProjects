@@ -7,7 +7,7 @@ import About from './components/About';
 function App() {
   return (
     <div className="App">
-      <div id="home"></div>
+      <div id="home" style={{top:"-100px", height:"1px", width:"1px"}}></div>
       <Menu />
       <About />
       <Contact />
