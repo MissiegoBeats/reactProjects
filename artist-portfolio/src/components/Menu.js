@@ -5,7 +5,7 @@ import logoMenu from '../images/logo-menu.png';
 
 function Menu() {
   return (
-    <Navbar bg="dark" expand="lg" data-bs-theme="dark">
+    <Navbar className="navbar fixed-top" bg="dark" expand="lg" data-bs-theme="dark">
       <Navbar.Brand href="#home" style={{ marginLeft: "10px" }}><img src={logoMenu} height={40} width={40}></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

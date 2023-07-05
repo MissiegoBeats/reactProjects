@@ -12,27 +12,24 @@ function Contact() {
   };
 
   return (
-    <Container className="contact" expand="lg">
+    <Container className="contact bg-dark" data-bs-theme="dark" expand="lg" style={{width:"100%"}} id="contact">
       <Row className="justify-content-center bg-dark" data-bs-theme="dark" expand="lg" style={{color:"white"}}>
         <Col xs={12} sm={8} md={6}>
-          <h2>Contact Us</h2>
+          <h2 class="text-center">Contact Us</h2>
           <Form onSubmit={generateMail}>
-            <Form.Group controlId="formName">
+            <Form.Group controlId="formName" style={{marginTop: "10px"}}>
               <Form.Label>Name</Form.Label>
               <Form.Control type="text" placeholder="Enter your name" />
             </Form.Group>
-
-            <Form.Group controlId="formSubject">
+            <Form.Group controlId="formSubject" style={{marginTop: "20px"}}>
               <Form.Label>Email subject</Form.Label>
               <Form.Control type="subject" placeholder="Enter your subject" />
             </Form.Group>
-
-            <Form.Group controlId="formMessage">
+            <Form.Group controlId="formMessage" style={{marginTop: "20px"}}>
               <Form.Label>Message</Form.Label>
               <Form.Control as="textarea" rows={3} placeholder="Enter your message" />
             </Form.Group>
-
-            <Button variant="primary" type="submit" style={{marginTop: "10px"}}>
+            <Button class="btn btn-light btn-lg btn-block" type="submit" style={{marginTop: "20px", marginBottom:"10px", width:"100%"}} >
               Submit
             </Button>
           </Form>
