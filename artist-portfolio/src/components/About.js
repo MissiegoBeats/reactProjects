@@ -3,36 +3,37 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import image1 from '../images/image1.png';
 import image2 from '../images/image2.png';
 import image3 from '../images/image3.png';
+import '../styles/About.css'; // Import the custom CSS file
 
 function About() {
   return (
-    <div class="bg-dark" style={{ color: "white", marginTop: "60px", marginBottom: "20px"}} id="about">
-      <div style={{ display: "flex", justifyContent: "center", marginBottom: "10px", marginTop: "10px" }}>
+    <div className="bg-dark text-white" style={{ marginTop: '60px', marginBottom: '20px', userSelect:"none"}} id="about">
+      <div className="text-center mb-4 mt-2">
         <h1>About</h1>
       </div>
-      <div style={{ display: "flex", justifyContent: "center", marginBottom: "20px", marginTop: "10px" }}>
-        <div class="card" style={{ width: "18rem", marginLeft:"10px", marginRight:"10px"}}>
-          <img class="card-img-top" src={image1} alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a class="btn btn-primary">Go somewhere</a>
+      <div className="d-flex justify-content-center">
+        <div className="card m-2 bg-dark text-white hover-animation" style={{ width: '18rem' }}>
+          <img className="card-img-top" src={image1} alt="Card image cap" />
+          <div className="card-body">
+            <h5 className="card-title">Florida</h5>
+            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" className="btn btn-light">Link to song</a>
           </div>
         </div>
-        <div class="card" style={{ width: "18rem", marginLeft:"10px", marginRight:"10px" }}>
-          <img class="card-img-top" src={image2} alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a class="btn btn-primary">Go somewhere</a>
+        <div className="card m-2 bg-dark text-white hover-animation" style={{ width: '18rem' }}>
+          <img className="card-img-top" src={image2} alt="Card image cap" />
+          <div className="card-body">
+            <h5 className="card-title">This Weekend</h5>
+            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" className="btn btn-light">Link to song</a>
           </div>
         </div>
-        <div class="card" style={{ width: "18rem", marginLeft:"10px", marginRight:"10px" }}>
-          <img class="card-img-top" src={image3} alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a class="btn btn-primary">Go somewhere</a>
+        <div className="card m-2 bg-dark text-white hover-animation" style={{ width: '18rem' }}>
+          <img className="card-img-top" src={image3} alt="Card image cap" />
+          <div className="card-body">
+            <h5 className="card-title">Thoughts</h5>
+            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" className="btn btn-light">Link to song</a>
           </div>
         </div>
       </div>
