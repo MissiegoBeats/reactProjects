@@ -4,6 +4,7 @@ import ClearButton from './subcomponents/ClearButton';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
 import '../styles/Calculator.css';
+import {FaRegCopy} from 'react-icons/fa';
 
 function Calculator() {
 
@@ -23,6 +24,12 @@ function Calculator() {
     } else {
       alert("You must introduce some mathematical expression");
     }
+  };
+
+  const copyToClipboard = (e) => {
+    navigator.clipboard.writeText(input).then(function (x) {
+      alert("Expression copied to clipboard!");
+    });
   };
 
   return (
@@ -59,6 +66,9 @@ function Calculator() {
         </div>
         <div className='row'>
           <ClearButton handleClick={clearInput}>Clear</ClearButton>
+        </div>
+        <div className='row'>
+          <button type="text" class="btn btn-dark" onClick={copyToClipboard}><FaRegCopy className="copy" /> </button>
         </div>
       </div>
     </div>
