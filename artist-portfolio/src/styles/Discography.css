@@ -1,26 +1,66 @@
 @keyframes slideIn {
-    from {
-      transform: translateY(50%);
-      opacity: 0;
-      transition: transform 0.3s ease-in-out;
-      border: 1px solid white;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-      transition: transform 0.3s ease-in-out;
-      border: 1px solid white;
-    }
-  }
-  
-  .discography-card {
-    animation: slideIn 0.5s ease-in-out;
-    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
-  }
-  
-  .discography-card:hover {
-    transform: scale(1.05);
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out;
     border: 1px solid white;
-    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
   }
-  
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid white;
+  }
+}
+
+.discography-card {
+  animation: slideIn 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.discography-card:hover {
+  transform: scale(1.05);
+  border: 1px solid white;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.listen-button-spotify {
+  background-color: #1DB954;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 40px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.listen-button-spotify:hover {
+  background-color: #2bf873;
+  transition: 0.3s ease-in-out;
+}
+
+.button-listen-youtube {
+  background-color: #FF0000;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 40px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.button-listen-youtube:hover {
+  background-color: #ff4d4d;
+  transition: 0.3s ease-in-out;
+}

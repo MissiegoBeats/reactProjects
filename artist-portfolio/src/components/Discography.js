@@ -9,6 +9,7 @@ import image2 from '../images/image2.png';
 import image3 from '../images/image3.png';
 import image4 from '../images/image4.png';
 import Card from './Card.js';
+import { BsSpotify } from 'react-icons/bs';
 
 function Discography() {
   const albums = [
@@ -16,19 +17,19 @@ function Discography() {
       title: 'The Abyss',
       year: '2022',
       cover: cover1,
-      url: 'https://youtube.com/playlist?list=OLAK5uy_lVr869Aaq09L1X5CNJeBTb9mgpAVGDIWQ',
+      url: 'https://open.spotify.com/album/2zZvOehxeUYhWfrBbEPq3w?si=vs2itylBSrWitAGQLVGY0w',
     },
     {
       title: 'Dear Depression',
       year: '2022',
       cover: cover2,
-      url: 'https://youtube.com/playlist?list=OLAK5uy_kfwcMqjgctfho984ICsY8W2H1LOqX_u64',
+      url: 'https://open.spotify.com/album/7GCEaBjroac3uWbBoatNE3?si=8f15Us5jRoC3GSdwOC4Asg',
     },
     {
       title: 'rockstar in the making',
       year: 'Soon (link to single)',
       cover: cover3,
-      url: 'https://youtu.be/5KHZVPqT0XM',
+      url: 'https://open.spotify.com/track/6z1DxDmWTkWvHSGhZRYAmK?si=c2691a89c6704624',
     },
   ];
 
@@ -76,7 +77,7 @@ function Discography() {
               <div className="card-body">
                 <h5 className="card-title">{album.title}</h5>
                 <p className="card-text">Year: {album.year}</p>
-                <a href={album.url} target="_blank" className="btn btn-light">Listen</a>
+                <a href={album.url} target="_blank" className="btn btn-light d-flex justify-content-center listen-button-spotify"><BsSpotify /></a>
               </div>
             </div>
           </div>

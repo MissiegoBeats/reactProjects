@@ -1,5 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BsYoutube } from 'react-icons/bs';
+import '../styles/Discography.css';
 
 function Card(props) {
   return (
@@ -7,7 +9,7 @@ function Card(props) {
       <img className="card-img-top" src={props.image} alt="Card" />
       <div className="card-body">
         <h5 className="card-title">{props.name}</h5>
-        <a href={props.url} className="btn btn-light w-100" target="_blank">Link to song</a>
+        <a href={props.url} className="btn btn-light w-100 button-listen-youtube" target="_blank"><BsYoutube></BsYoutube></a>
       </div>
     </div>
   );
