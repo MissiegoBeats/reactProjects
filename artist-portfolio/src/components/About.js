@@ -4,6 +4,7 @@ import image1 from '../images/image1.png';
 import image2 from '../images/image2.png';
 import image3 from '../images/image3.png';
 import '../styles/About.css'; // Import the custom CSS file
+import Card from './Card.js';
 
 function About() {
   return (
@@ -16,30 +17,21 @@ function About() {
           You can listen to this versatility and passion for music in his discography</p>
       </div>
       <div className="d-flex justify-content-center">
-        <div className="card m-2 bg-dark text-white hover-animation" style={{ width: '18rem' }}>
-          <img className="card-img-top" src={image1} alt="Card image cap" />
-          <div className="card-body">
-            <h5 className="card-title">Florida</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="https://youtu.be/KZtbAWjpKHE" className="btn btn-light" target="_blank">Link to song</a>
-          </div>
-        </div>
-        <div className="card m-2 bg-dark text-white hover-animation" style={{ width: '18rem' }}>
-          <img className="card-img-top" src={image2} alt="Card image cap" />
-          <div className="card-body">
-            <h5 className="card-title">This Weekend</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="https://youtu.be/xhfrtlTylJw" className="btn btn-light" target="_blank">Link to song</a>
-          </div>
-        </div>
-        <div className="card m-2 bg-dark text-white hover-animation" style={{ width: '18rem' }}>
-          <img className="card-img-top" src={image3} alt="Card image cap" />
-          <div className="card-body">
-            <h5 className="card-title">Thoughts</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="https://youtu.be/1zvGHLummI4" className="btn btn-light" target="_blank">Link to song</a>
-          </div>
-        </div>
+        <Card 
+          image={image1}
+          name="Florida"
+          text="Some quick example text to build on the card title and make up the bulk of the card's content."
+          url="https://youtu.be/KZtbAWjpKHE" />
+        <Card
+          image={image2}
+          name="This Weekend"
+          text="Some quick example text to build on the card title and make up the bulk of the card's content."
+          url="https://youtu.be/xhfrtlTylJw" />
+        <Card
+          image={image3}
+          name="Thoughts"
+          text="Some quick example text to build on the card title and make up the bulk of the card's content."
+          url="https://youtu.be/1zvGHLummI4" />
       </div>
     </div>
   );
