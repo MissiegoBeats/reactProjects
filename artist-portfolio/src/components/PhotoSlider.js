@@ -7,7 +7,7 @@ import image3 from '../images/slider3.jpg';
 
 function PhotoSlider() {
   return (
-      <Carousel interval={2000} style={{ width: '400px', height: 'auto' }}>
+      <Carousel interval={2000} style={{ width: '600px', height: '300px' }}>
       <Carousel.Item >
         <img className="d-block w-100" src={image1} alt="First slide" />
       </Carousel.Item>
