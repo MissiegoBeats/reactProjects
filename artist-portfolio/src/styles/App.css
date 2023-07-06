@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+  border: 0;
+  height: 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+  background-color: white; /* Inherits from outer container */
+  border-radius: 5px;
+}

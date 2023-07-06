@@ -13,7 +13,7 @@ function Menu() {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown"> {/* id is required */}
-              <NavDropdown.Item href="#albums">Albums</NavDropdown.Item> {/* href is required */}
+              <NavDropdown.Item href="#discography">Discography</NavDropdown.Item> {/* href is required */}
               <NavDropdown.Item href="#single">Latest Single</NavDropdown.Item> {/* href is required */}
               <NavDropdown.Item href="#concerts">Concerts</NavDropdown.Item> {/* href is required */}
               <NavDropdown.Divider /> {/* Divider is optional */}
