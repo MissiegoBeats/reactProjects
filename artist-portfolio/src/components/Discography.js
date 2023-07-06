@@ -57,11 +57,11 @@ function Discography() {
   ]
 
   return (
-    <div className="container bg-dark pt-3 text-white" id="discography" style={{}}>
+    <div className="container bg-dark pt-3 text-white">
       <h2 className="text-center pb-5">Discography</h2>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center" style={{marginLeft:"20px"}}>
         {cards.map((card, index) => (
-            <div key={index} className="col-lg-4 col-md-6 mb-4 pt-3">
+            <div key={index} className="col-lg-3 col-md-2 mb-4 pt-3">
              <Card 
               image={card.image}
               name={card.title}

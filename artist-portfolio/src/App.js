@@ -14,6 +14,7 @@ function App() {
       <Welcome />
       <div id="about" style={{ position:"relative",top: "-65px", height: "1px", width: "1px" }}></div>
       <About />
+      <div id="discography" style={{ position:"relative",top: "-10px" }}></div>
       <div class="bg-dark pt-5 w-100 h-100">
         <Discography />
       </div>
