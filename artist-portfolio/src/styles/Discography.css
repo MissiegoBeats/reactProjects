@@ -1,0 +1,26 @@
+@keyframes slideIn {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+      transition: transform 0.3s ease-in-out;
+      border: 1px solid white;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+      transition: transform 0.3s ease-in-out;
+      border: 1px solid white;
+    }
+  }
+  
+  .discography-card {
+    animation: slideIn 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  
+  .discography-card:hover {
+    transform: scale(1.05);
+    border: 1px solid white;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  
